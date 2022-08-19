@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <script>
+        function clicking()
+        {
+            document.getElementById('vis').style.display='block';
+        }
+
+    </script>
+    <style>
+
+        body{
+        background: rgba(255, 255, 255, 0.13);  
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.29);
+        background: linear-gradient(90deg, rgba(180,58,173,1) 0%, rgba(29,215,253,1) 68%, rgba(69,184,252,1) 100%);
+        }
+        .Assistant
+        {
+            float: left;
+        }
+        
+        .Assistant :hover
+        {
+            transform: rotate(30deg);
+            transition: transform .2s;
+        }
+        .right_content
+        {
+            height: 400px;
+        }
+        .bt
+        {
+            font-size: 50px;
+            margin-left: 70px;
+            background: linear-gradient(90deg, rgba(180,58,173,1) 0%, rgba(29,215,253,1) 68%, rgba(69,184,252,1) 100%);
+            color: white;
+            border:none;
+            border-radius: 20px;
+     
+        }
+        .Content
+        {
+            text-align: center;
+            display: none;
+        }
+        ul
+        {
+            list-style: none;
+        }
+        .fb
+        {
+            font-size: 35px;
+            background: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .fb:hover
+        {
+            background-color: #4267B2;
+            color: white;
+            border-radius: 20px;
+            border: none;
+            transform: scale(1.5);
+            transition: transform .2s;
+        }
+        .right_content h1
+        {
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="Heading">
+    </div>
+    <div class="Assistant">
+        <img src="https://cdn0.iconfinder.com/data/icons/innova/32/innova_Robot-512.png" height="400">
+    </div>
+    
+    <div class="right_content">  
+        <h1>Hii
+        <br>
+        Do You Want 
+        <br>
+        Generate
+        <br>
+         Some Links
+        </h1>
+        <br><br>
+        <br>
+          <input type="button" class="bt" value="Generate" onclick="clicking()">
+    </div>
+
+    <div class="Content" id="vis">
+        <ul> <li> <h3 style="display: inline;">  </h3><a href="https://www.google.com/" ><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" height="80"></a></li>
+        <br>
+          <li><h3 style="display: inline; margin-left: 200px;"> </h3>  <a href="https://www.youtube.com/" target="_blank"><img src="https://www.gstatic.com/youtube/img/promos/growth/50f85885003c94b4a70bbe7221c7985e4cb1c55f0e43f78f849824c20ccc58b5_640x48.png" height="50"></a></li>
+        
+          <li><h3 style="display: inline; "></h3> <a href="https://www.facebook.com/" target="_blank"><button class="fb">facebook</button></a></li>
+        
+     <li><h3 style="display: inline;">  </h3> <a href="https://www.javatpoint.com/" target="_blank"><img src="https://static.javatpoint.com/images/logo/jtp_logo.png" height="100"></a></li>
+        
+        <li><h3 style="display: inline;">  To Go for Our Company</h3> <a href="https://aalamsoft.com/" target="_blank">Aalamsoft</a></li>
+        <br>
+    </ul>
+
+    </div>
+</body>
+</html>
